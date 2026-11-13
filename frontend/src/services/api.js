@@ -1,8 +1,5 @@
 
-const API_URL = (
-  import.meta.env.VITE_API_URL ||
-  "http://localhost:8000/api"
-).replace(/\/$/, "");
+const API_URL = "/api";
 
 async function getCsrfToken() {
   const response = await fetch(`${API_URL}/auth/csrf/`, {
