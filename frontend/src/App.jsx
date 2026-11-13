@@ -48,31 +48,31 @@ export default function App() {
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
-  let active = true;
+    let active = true;
 
-  async function checkLogin() {
-    try {
-      const user = await api.getCurrentUser();
+    async function checkLogin() {
+      try {
+        const user = await api.getCurrentUser();
 
-      if (active) {
-        setCurrentUser(user);
-      }
-    } catch {
-      if (active) {
-        setCurrentUser(null);
+        if (active) {
+          setCurrentUser(user);
+        }
+      } catch {
+        if (active) {
+          setCurrentUser(null);
+        }
       }
     }
-  }
 
-  checkLogin();
+    checkLogin();
 
-  window.addEventListener("hashchange", checkLogin);
+    window.addEventListener("hashchange", checkLogin);
 
-  return () => {
-    active = false;
-    window.removeEventListener("hashchange", checkLogin);
-  };
-}, []);
+    return () => {
+      active = false;
+      window.removeEventListener("hashchange", checkLogin);
+    };
+  }, []);
 
   useEffect(() => {
     function handleNavigation() {
@@ -264,27 +264,27 @@ export default function App() {
           </button>
 
           <div className={`site-nav-links ${mobileMenuOpen ? "is-open" : ""}`}>
-  <a href="#home" onClick={() => setMobileMenuOpen(false)}>Home</a>
-  <a href="#stays" onClick={() => setMobileMenuOpen(false)}>Stays</a>
-  <a href="#packages" onClick={() => setMobileMenuOpen(false)}>Special Package</a>
-  <a href="#location" onClick={() => setMobileMenuOpen(false)}>Destinations</a>
-  <a href="#gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</a>
-  <a href="#booking" className="nav-book" onClick={() => setMobileMenuOpen(false)}>Book now</a>
+            <a href="#home" onClick={() => setMobileMenuOpen(false)}>Home</a>
+            <a href="#stays" onClick={() => setMobileMenuOpen(false)}>Stays</a>
+            <a href="#packages" onClick={() => setMobileMenuOpen(false)}>Special Package</a>
+            <a href="#location" onClick={() => setMobileMenuOpen(false)}>Destinations</a>
+            <a href="#gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</a>
+            <a href="#booking" className="nav-book" onClick={() => setMobileMenuOpen(false)}>Book now</a>
 
-  {currentUser && !currentUser.is_staff ? (
-    <a href="#dashboard" onClick={() => setMobileMenuOpen(false)}>
-      My Dashboard
-    </a>
-  ) : (
-    <a href="#login" onClick={() => setMobileMenuOpen(false)}>
-      Login
-    </a>
-  )}
+            {currentUser && !currentUser.is_staff ? (
+              <a href="#dashboard" onClick={() => setMobileMenuOpen(false)}>
+                Dashboard
+              </a>
+            ) : (
+              <a href="#login" onClick={() => setMobileMenuOpen(false)}>
+                Login
+              </a>
+            )}
 
-  <a href="#owner-login" className="nav-owner" onClick={() => setMobileMenuOpen(false)}>
-    Owner
-  </a>
-</div>
+            <a href="#owner-login" className="nav-owner" onClick={() => setMobileMenuOpen(false)}>
+              Owner
+            </a>
+          </div>
         </nav>
       )}
 
