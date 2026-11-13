@@ -1,0 +1,330 @@
+[
+{
+  "model": "hotels.hotel",
+  "pk": 1,
+  "fields": {
+    "name": "Konkan Kinara",
+    "slug": "konkan-kinara-shiroda",
+    "location": "Shiroda, Vengurla, Sindhudurg",
+    "description": "A traditional Konkani-style stay in Shiroda, offering AC and Non-AC rooms, restaurant facilities and convenient access to nearby beaches.",
+    "address": "Shiroda Beach Road, Bagayatwadi, Shiroda, Maharashtra 416518",
+    "phone_number": "",
+    "price_per_night": "1500.00",
+    "image_url": "https://assets.centralindex.com/W/48/97312d4ba165c0810dac1fa82a7decf8.jpg",
+    "amenities": [
+      "Restaurant",
+      "Room Service",
+      "Hot Water",
+      "Free Parking",
+      "Family Friendly",
+      "Air Conditioning",
+      "Television"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-11-11T17:03:42.745Z"
+  }
+},
+{
+  "model": "hotels.hotel",
+  "pk": 2,
+  "fields": {
+    "name": "Rajgad Resort",
+    "slug": "rajgad-resort",
+    "location": "Malewad, Sawantwadi, Sindhudurg",
+    "description": "A peaceful countryside resort in Malewad, Sawantwadi, offering spacious rooms, a swimming pool, restaurant and green surroundings.",
+    "address": "H. No. 1417, Redi-Belagavi Road, Near Heera Jal Factory, Maharashtra 416518",
+    "phone_number": "+917498187320",
+    "price_per_night": "1500.00",
+    "image_url": "https://pix10.agoda.net/hotelImages/37144731/0/6078d43b9c3bd8b32a670438ee7e905d.jpg?ce=0&s=800x600",
+    "amenities": [
+      "Swimming Pool",
+      "Restaurant",
+      "Free Wi-Fi",
+      "Free Parking",
+      "Children's Play Area",
+      "Function Hall"
+    ],
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-11-12T18:35:18.242Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 1,
+  "fields": {
+    "hotel": 1,
+    "name": "Non-AC Room",
+    "description": "Comfortable non-air-conditioned room for guests",
+    "price_per_night": "1500.00",
+    "max_guests": 3,
+    "image_url": "",
+    "amenities": [
+      "Bed",
+      "Attached Bathroom",
+      "Fan"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-12T06:06:29.818Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 2,
+  "fields": {
+    "hotel": 1,
+    "name": "Non-AC Room",
+    "description": "Comfortable non-air-conditioned room for guests",
+    "price_per_night": "1500.00",
+    "max_guests": 6,
+    "image_url": "",
+    "amenities": [
+      "Bed",
+      "Attached Bathroom",
+      "Fan"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-12T06:06:29.823Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 3,
+  "fields": {
+    "hotel": 1,
+    "name": "AC Room",
+    "description": "Air-conditioned room for a comfortable stay",
+    "price_per_night": "2000.00",
+    "max_guests": 3,
+    "image_url": "",
+    "amenities": [
+      "Bed",
+      "Attached Bathroom",
+      "Air Conditioning",
+      "Fan"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-12T06:06:29.825Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 4,
+  "fields": {
+    "hotel": 1,
+    "name": "AC Room",
+    "description": "Air-conditioned room for a comfortable stay",
+    "price_per_night": "2000.00",
+    "max_guests": 6,
+    "image_url": "",
+    "amenities": [
+      "Bed",
+      "Attached Bathroom",
+      "Air Conditioning",
+      "Fan"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-12T06:06:29.826Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 5,
+  "fields": {
+    "hotel": 2,
+    "name": "Standard Room",
+    "description": "Comfortable standard room for up to two adults.",
+    "price_per_night": "2000.00",
+    "max_guests": 2,
+    "image_url": "https://content.jdmagicbox.com/comp/sawantwadi/m5/9999p2363.2363.171230043711.y9m5/catalogue/green-grass-resort-sawantwadi-hotels-1r1bf5qqvd-250.jpg",
+    "amenities": [
+      "Attached Bathroom",
+      "Room Service"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-13T03:45:39.069Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 6,
+  "fields": {
+    "hotel": 2,
+    "name": "Standard Room Fan / Non-AC",
+    "description": "Comfortable non-AC room for up to two adults.",
+    "price_per_night": "1500.00",
+    "max_guests": 2,
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRArEHsmC8cRjAQFpLuWXXLHo5VfJtsI6wV4NHTkeZFmwMtzfov",
+    "amenities": [
+      "Attached Bathroom",
+      "Fan"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-13T03:45:39.092Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 7,
+  "fields": {
+    "hotel": 2,
+    "name": "Deluxe Double or Twin",
+    "description": "Spacious deluxe room with double or twin bedding.",
+    "price_per_night": "2000.00",
+    "max_guests": 2,
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY-iR8wTKmiXdIN2sW3YsiL_GhstxhHB2UYlfyI4lJ_ZtpNt1-",
+    "amenities": [
+      "Attached Bathroom",
+      "Room Service"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-13T03:45:39.099Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 8,
+  "fields": {
+    "hotel": 2,
+    "name": "Royal Room",
+    "description": "Premium royal room with comfortable accommodation.",
+    "price_per_night": "2000.00",
+    "max_guests": 2,
+    "image_url": "https://pub-016752fa37b9415b9be58d1981d2304f.r2.dev/images/google_photo_e0dafe7c4fd4.jpg",
+    "amenities": [
+      "Attached Bathroom",
+      "Room Service"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-13T03:45:39.107Z"
+  }
+},
+{
+  "model": "hotels.room",
+  "pk": 9,
+  "fields": {
+    "hotel": 2,
+    "name": "Royal Twin",
+    "description": "Premium twin room for up to two adults.",
+    "price_per_night": "2000.00",
+    "max_guests": 2,
+    "image_url": "https://cdn0.weddingwire.in/vendor/9622/3_2/960/jpg/44-img-6886_15_439622-167698173882693.jpeg",
+    "amenities": [
+      "Attached Bathroom",
+      "Twin Beds"
+    ],
+    "is_active": true,
+    "created_at": "2026-11-13T03:45:39.112Z"
+  }
+},
+{
+  "model": "destinations.destination",
+  "pk": 1,
+  "fields": {
+    "name": "Tarkarli",
+    "slug": "tarkarli",
+    "district": "Sindhudurg",
+    "description": "Explore beautiful coastal scenery, clear waters and local culture in Tarkarli.",
+    "image_url": "",
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-11-11T17:05:37.274Z"
+  }
+},
+{
+  "model": "destinations.destination",
+  "pk": 2,
+  "fields": {
+    "name": "Amboli",
+    "slug": "amboli",
+    "district": "Sindhudurg",
+    "description": "Discover the green landscapes, waterfalls and natural beauty of Amboli.",
+    "image_url": "",
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-11-11T17:06:36.205Z"
+  }
+},
+{
+  "model": "packages.tourpackage",
+  "pk": 1,
+  "fields": {
+    "name": "Konkan Weekend Escape",
+    "slug": "konkan-weekend-escape",
+    "duration": "2 Days / 1 Night",
+    "price": "4999.00",
+    "description": "Enjoy a relaxing weekend exploring Konkan beaches, local food and beautiful coastal villages.",
+    "image_url": "",
+    "is_active": true,
+    "created_at": "2026-11-11T17:08:24.377Z"
+  }
+},
+{
+  "model": "packages.tourpackage",
+  "pk": 2,
+  "fields": {
+    "name": "Tarkarli Adventure",
+    "slug": "tarkarli-adventure",
+    "duration": "3 Days / 2 Nights",
+    "price": "7999.00",
+    "description": "Discover Tarkarli, enjoy local sightseeing and explore coastal experiences.",
+    "image_url": "",
+    "is_active": true,
+    "created_at": "2026-11-11T17:09:22.944Z"
+  }
+},
+{
+  "model": "packages.tourpackage",
+  "pk": 3,
+  "fields": {
+    "name": "Amboli Nature Retreat",
+    "slug": "amboli-nature-retreat",
+    "duration": "2 Days / 1 Night",
+    "price": "3999.00",
+    "description": "Experience the peaceful greenery, waterfalls and natural beauty of Amboli.",
+    "image_url": "",
+    "is_active": true,
+    "created_at": "2026-11-11T17:10:14.237Z"
+  }
+},
+{
+  "model": "activities.activity",
+  "pk": 1,
+  "fields": {
+    "name": "Boating Experience",
+    "location": "Tarkarli",
+    "description": "Enjoy a scenic boating experience along the beautiful Konkan coast.",
+    "price_from": "500.00",
+    "image_url": "",
+    "is_active": true,
+    "created_at": "2026-11-11T17:13:37.369Z"
+  }
+},
+{
+  "model": "activities.activity",
+  "pk": 2,
+  "fields": {
+    "name": "Scuba Diving",
+    "location": "Tarkarli",
+    "description": "Explore the underwater marine environment with a qualified local operator.",
+    "price_from": "1500.00",
+    "image_url": "",
+    "is_active": true,
+    "created_at": "2026-11-11T17:14:25.291Z"
+  }
+},
+{
+  "model": "activities.activity",
+  "pk": 3,
+  "fields": {
+    "name": "Amboli Nature Walk",
+    "location": "Amboli",
+    "description": "Discover the natural beauty and green landscapes of Amboli with a local guide.",
+    "price_from": "300.00",
+    "image_url": "",
+    "is_active": true,
+    "created_at": "2026-11-11T17:15:00.910Z"
+  }
+}
+]
