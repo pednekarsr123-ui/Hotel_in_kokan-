@@ -836,6 +836,8 @@ export default function App() {
               <a href="#packages">Special Package</a>
               <a href="#location">Destinations</a>
               <a href="#gallery">Gallery</a>
+              <a href="#dashboard">Dashboard</a>
+              <a href="#login">Login</a>
               <a href="#register">Create Account</a>
             </div>
 
