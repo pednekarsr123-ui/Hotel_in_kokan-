@@ -637,7 +637,7 @@ export default function App() {
                 <div className="home-location-map">
                   <iframe
                     title="Hotel Kokan Kinara location"
-                    src="https://www.google.com/maps/place/Hotel+Kokan+Kinara+(SHIRODA)/@15.7702151,73.6567806,3213m/data=!3m1!1e3!4m13!1m2!2m1!1sHotel+Kokan+Kinara,+1076+Shiroda+Bagayatwadi,+Vengurla,+Maharashtra+416518!3m9!1s0x3bbff08affa12ab9:0x7734743b372892d0!5m2!4m1!1i2!8m2!3d15.7687844!4d73.6725816!15sCkpIb3RlbCBLb2thbiBLaW5hcmEsIDEwNzYgU2hpcm9kYSBCYWdheWF0d2FkaSwgVmVuZ3VybGEsIE1haGFyYXNodHJhIDQxNjUxOJIBBWhvdGVs4AEA!16s%2Fg%2F1tgfnk__?hl=en-US&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D"
+                    src="https://maps.google.com/maps?q=Hotel%20Kokan%20Kinara%2C%201076%20Shiroda%20Bagayatwadi%2C%20Vengurla%2C%20Maharashtra%20416518&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     allowFullScreen
