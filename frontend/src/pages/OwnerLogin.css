@@ -1,0 +1,355 @@
+
+.owner-login-page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(184, 149, 84, 0.15), transparent 30%),
+    radial-gradient(circle at 85% 80%, rgba(184, 149, 84, 0.12), transparent 30%),
+    linear-gradient(135deg, #102b23, #193c30 55%, #0b211b);
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Background decorations */
+
+.owner-login-decoration {
+  position: absolute;
+  border: 1px solid rgba(184, 149, 84, 0.18);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.owner-login-decoration-one {
+  width: 420px;
+  height: 420px;
+  top: -180px;
+  left: -130px;
+}
+
+.owner-login-decoration-two {
+  width: 550px;
+  height: 550px;
+  right: -230px;
+  bottom: -280px;
+}
+
+/* Login and registration card */
+
+.owner-login-card {
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 42px 40px;
+  border-radius: 22px;
+  background: #f8f6ef;
+  border: 1px solid rgba(184, 149, 84, 0.35);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.28);
+
+  animation: authCardSlideUp 2.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Brand */
+
+.owner-login-brand {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #17382c;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+}
+
+.owner-login-brand span {
+  color: #b18b4e;
+}
+
+/* Icon */
+
+.owner-login-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #17382c;
+  color: #d9b56f;
+  font-size: 27px;
+  box-shadow: 0 7px 20px rgba(23, 56, 44, 0.2);
+}
+
+/* Headings */
+
+.owner-login-eyebrow {
+  text-align: center;
+  color: #aa8548;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin: 0 0 12px;
+}
+
+.owner-login-card h1 {
+  color: #19382d;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 5vw, 39px);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.owner-login-card h1 i {
+  color: #b18b4e;
+}
+
+.owner-login-description {
+  color: #77796f;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 auto 27px;
+  max-width: 340px;
+}
+
+/* Form */
+
+.owner-login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.owner-login-card form label {
+  color: #294438;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.owner-login-card form input {
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border: 1px solid #deded2;
+  border-radius: 9px;
+  outline: none;
+  background: #fffefa;
+  color: #19382d;
+  font-family: inherit;
+  font-size: 13px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.owner-login-card form input:focus {
+  border-color: #b18b4e;
+  box-shadow: 0 0 0 3px rgba(177, 139, 78, 0.12);
+}
+
+.owner-login-card form input::placeholder {
+  color: #a5a69b;
+}
+
+/* Password */
+
+.owner-login-password {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.owner-login-password input {
+  padding-right: 65px !important;
+}
+
+.owner-login-password button {
+  position: absolute;
+  right: 12px;
+  border: none;
+  background: transparent;
+  color: #a17d42;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Submit button */
+
+.owner-login-submit {
+  min-height: 51px;
+  width: 100%;
+  margin-top: 17px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #17382c, #285340);
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+}
+
+.owner-login-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 22px rgba(23, 56, 44, 0.2);
+  background: linear-gradient(110deg, #244b39, #35674e);
+}
+
+.owner-login-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.owner-login-submit span {
+  font-size: 19px;
+}
+
+/* Error and success messages */
+
+.owner-login-error {
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 9px;
+  background: #fcebea;
+  border: 1px solid #f2c8c5;
+  color: #a3312b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.owner-login-success {
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 9px;
+  background: #e5f4e8;
+  border: 1px solid #c4e4ca;
+  color: #24633b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Footer */
+
+.owner-login-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid #e6e3d9;
+  margin-top: 25px;
+  padding-top: 19px;
+}
+
+.owner-login-footer span {
+  color: #898a80;
+  font-size: 11px;
+}
+
+.owner-login-footer a {
+  color: #a17d42;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.owner-login-footer a:hover {
+  color: #17382c;
+}
+
+/* Registration page */
+
+.register-page {
+  align-items: flex-start;
+  overflow-y: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.register-card {
+  max-width: 520px;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.register-password-hint {
+  color: #85867c;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Bottom-to-top card animation */
+
+@keyframes authCardSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+  .owner-login-page {
+    padding: 20px 14px;
+  }
+
+  .register-page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .owner-login-card {
+    padding: 32px 23px;
+    border-radius: 17px;
+  }
+
+  .owner-login-brand {
+    font-size: 18px;
+  }
+
+  .owner-login-card h1 {
+    font-size: 31px;
+  }
+
+  .owner-login-footer {
+    justify-content: center;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-login-card {
+    animation: none;
+  }
+}
