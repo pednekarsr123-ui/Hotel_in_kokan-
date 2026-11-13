@@ -1,10 +1,9 @@
 
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "https://hotel-in-kokan.onrender.com/api/:path*"
+      "source": "/api/(.*)",
+      "destination": "https://hotel-in-kokan.onrender.com/api/$1"
     }
   ]
 }
