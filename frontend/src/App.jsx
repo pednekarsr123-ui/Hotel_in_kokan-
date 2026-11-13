@@ -626,7 +626,7 @@ export default function App() {
 
                   <a
                     className="home-primary-button"
-                    href="https://www.google.com/maps/search/?api=1&query=Hotel+Kokan+Kinara%2C+1076+Shiroda+Bagayatwadi%2C+Vengurla%2C+Maharashtra+416518"
+                    href="https://www.google.com/maps/place/Hotel+Kokan+Kinara+(SHIRODA)/@15.7633171,73.6537878,4683m/data=!3m1!1e3!4m14!1m3!2m2!1sHotel+Kokan+Kinara,+1076+Shiroda+Bagayatwadi,+Vengurla,+Maharashtra+416518!6e3!3m9!1s0x3bbff08affa12ab9:0x7734743b372892d0!5m2!4m1!1i2!8m2!3d15.7687844!4d73.6725816!15sCkpIb3RlbCBLb2thbiBLaW5hcmEsIDEwNzYgU2hpcm9kYSBCYWdheWF0d2FkaSwgVmVuZ3VybGEsIE1haGFyYXNodHJhIDQxNjUxOJIBBWhvdGVs4AEA!16s%2Fg%2F1tgfnk__?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     rel="noreferrer"
                   >
