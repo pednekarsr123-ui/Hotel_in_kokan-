@@ -11,6 +11,7 @@ from apps.blogs.views import BlogPostViewSet
 from apps.bookings.views import BookingViewSet
 from apps.partners.views import PartnerEnquiryViewSet
 from apps.accounts.views import register, login_view, logout_view, me, csrf
+from django.http import HttpResponse
 
 router=DefaultRouter()
 router.register("hotels", HotelViewSet)
@@ -20,10 +21,19 @@ router.register("activities", ActivityViewSet)
 router.register("blogs", BlogPostViewSet)
 router.register("bookings", BookingViewSet, basename="booking")
 router.register("partners", PartnerEnquiryViewSet, basename="partner")
+
+def health_check(request):
+    return HttpResponse("ok", content_type="text/plain")
+
 urlpatterns=[
- path("admin/",admin.site.urls), path("api/",include(router.urls)),
- path("api/auth/csrf/",csrf), path("api/auth/register/",register),
- path("api/auth/login/",login_view), path("api/auth/logout/",logout_view), path("api/auth/me/",me),
+ path("admin/",admin.site.urls),
+ path("health/", health_check),
+ path("api/",include(router.urls)),
+ path("api/auth/csrf/",csrf), 
+ path("api/auth/register/",register),
+ path("api/auth/login/",login_view), 
+ path("api/auth/logout/",logout_view), 
+ path("api/auth/me/",me),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
